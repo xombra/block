@@ -1,4 +1,16 @@
-commit 638d5d93618347a9d6aea0987af51591c279b6b3 (HEAD, origin/master, origin/HEAD, master)
+commit 6fdf467e6276037fa3ac17ce2be6209f6b38fabc (HEAD, origin/master, origin/HEAD, master)
+Author: Xombra <xombra.com@gmail.com>
+Date:   Sun Nov 15 16:39:32 2015 -0430
+
+    * bugfixed
+
+commit 627f5dcac2a191388539cee3710a781dd1bc3077
+Author: Xombra <xombra.com@gmail.com>
+Date:   Sun Nov 15 14:46:00 2015 -0430
+
+    * changelog
+
+commit 638d5d93618347a9d6aea0987af51591c279b6b3
 Author: Xombra <xombra.com@gmail.com>
 Date:   Sun Nov 15 14:45:31 2015 -0430
 
