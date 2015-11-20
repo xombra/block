@@ -9,7 +9,7 @@ if [[ $USER != root ]]; then
 	exit 1
 fi
 
-if [ -f /etc/hosts ]; then
+if [[] -f /etc/hosts ]]; then
 # exist
 else
 	echo 'Host file does not exist will be created'
