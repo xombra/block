@@ -3,13 +3,18 @@
 # Licence: GPL-2
 # block url
 # bloquear url
-
+LC_ALL=C
 if [[ $USER != root ]]; then
 	echo -e "\e[00;31mERROR: You must be root to run script\e[00m"
 	exit 1
 fi
 
-if [[] -f /etc/hosts ]]; then
+if [[ -z $1 ]]; then
+	echo "ERROR: Debes indicar una ip o dominio"
+	exit 1
+fi
+
+if [[ -f /etc/hosts ]]; then
 # exist
 else
 	echo 'Host file does not exist will be created'
