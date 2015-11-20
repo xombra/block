@@ -14,6 +14,12 @@ if [[ -z $1 ]]; then
 	exit 1
 fi
 
+trap "rm -f /run/$0.pid; exit" INT TERM EXIT
+echo "$BASHPID" > /run/$0.pid
+SAVEIFS=$IFS
+IFS=$(echo -en "\n\b")
+
+
 if [[ -f /etc/hosts ]]; then
 # exist
 else
@@ -28,5 +34,9 @@ fi
 # Write file /etc/hosts
 
 echo "127.0.0.1" $1 >> /etc/hosts
-echo $1 " It was written in the host file" 
+echo $1 " It was written in the host file"
+
+IFS=$SAVEIFS
+rm -f /run/$0.pid
+trap - INT TERM EXIT
 exit 0
