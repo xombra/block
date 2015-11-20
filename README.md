@@ -3,6 +3,8 @@ Bloquear URL | Block url
 
 use:
 
-./block.sh domainblock.ext
+block domainblock.ext
 
-./block.sh *domain*
+block ip
+
+block *domain*
